@@ -53,3 +53,92 @@ MENJALANKAN APP DI VIRTUAL DEVICE
 MENEMUKAN FILE PROJEK YANG SUDAH DIBUAT
 1. jika kamu membuat folder pjocet didalam androidstudio maka buka folder androidstudio, kemudian cari folder bernama Happy Brithday yang sudah kita buat
  ![Screenshot (110)](https://user-images.githubusercontent.com/89612818/134352136-aff1b18a-de90-4066-9e93-90a87ca96d4e.png)
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+PERTEMUAN 4
+Pertama kita buat project seperti pertemuan 3 sebelumnya kemudian :
+
+https://developer.android.com/codelabs/basic-android-kotlin-training-birthday-card-app?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-kotlin-three%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-training-birthday-card-app#1
+
+**Mengubah pesan Hello World (Halo Dunia)**
+1. Di Android Studio, temukan jendela Project di sebelah kiri.
+2. Perhatikan folder dan file berikut: Folder **app** berisi sebagian besar file untuk aplikasi yang akan Anda ubah. Folder res ditujukan untuk 	resource, seperti gambar atau tata letak layar. Folder **layout** ditujukan untuk tata letak layar. File _**activity_main.xml**_ berisi deskripsi tata letak layar Anda.
+3. Luaskan folder **app**, lalu folder **res**, dan selanjutnya folder **layout**.
+4. Klik dua kali pada _**activity_main.xml**_. Tindakan ini akan membuka _**activity_main.xml** _ di layout Editor dan menampilkan tata letak yang dideskripsikan dalam tampilan Design.
+
+![Screenshot (143)](https://user-images.githubusercontent.com/89612818/136321859-aa5a124e-3837-4588-8308-911251a6b958.png)
+
+Catatan: Dalam codelab ini, Anda akan sering diminta untuk membuka file seperti di langkah sebelumnya. Sederhananya, langkah-langkah tersebut dapat dipersingkat menjadi: Buka **activity_main.xml (res > layout > activity_main.xml)** alih-alih mencantumkan setiap langkah secara terpisah.
+
+5. Lihat daftar tampilan di **Component Tree**. Perhatikan bahwa ada **ConstraintLayout** dan **TextView** di bawahnya. Keduanya mewakili UI aplikasi Anda. **TextView** diindentasi karena berada di dalam **ConstraintLayout**. Saat Anda menambahkan lebih banyak **Views** ke **ConstraintLayout**, **Views** akan ditambahkan ke daftar ini.
+6. Perhatikan bahwa **TextView** berisi "Hello World!" (Halo Dunia!) di sebelahnya, yaitu teks yang Anda lihat saat menjalankan aplikasi.
+![Screenshot (143)](https://user-images.githubusercontent.com/89612818/136322102-93437c4a-8fe0-4719-94e9-02f8b47e14e0.png)
+
+7. Di **Component Tree**, klik **TextView**.
+8. Cari **Attributes** di sebelah kanan.
+9. Cari bagian **Declared Attributes**.
+10. Perhatikan bahwa atribut **text** di bagian **Declared Attributes** berisi **Hello World!** (Halo Dunia!).
+![Screenshot (168)](https://user-images.githubusercontent.com/89612818/136322290-1531427e-c28b-4933-9b4c-6c4019bed87f.png)
+
+Atribut **text** menampilkan teks yang dicetak di dalam **TextView**.
+
+11. Klik atribut **text** yang menampilkan teks **Hello World!** (Halo Dunia!).
+12. Ubah menjadi **Happy Brithday!**, lalu tekan tombol **Enter**. Jika Anda kemudian melihat peringatan tentang string yang di-hardcode, jangan khawatir. Anda akan mempelajari cara menghapus peringatan tersebut di codelab berikutnya.
+13. Perhatikan bahwa teks di Design View telah berubah.....(Bagus! Anda bisa langsung melihat perubahannya)
+14. Jalankan aplikasi, dan sekarang Anda melihat teks **Happy Brithday!** 
+![Screenshot (145)](https://user-images.githubusercontent.com/89612818/136322770-b9fa437e-6d2e-4149-9fde-b7260c6e8d60.png)
+lupa ss hasil seperti berikut harusnya
+![233655306db5a589](https://user-images.githubusercontent.com/89612818/136322839-5c62be2c-4431-45e7-8cf1-8997d80bf815.png)
+Bagus! Anda membuat perubahan pertama pada aplikasi Android.
+
+**Menambahkan TextView ke tata letak**
+Kartu ulang tahun yang sedang Anda buat tampak berbeda dengan kartu yang ada di aplikasi. Sebagai ganti teks kecil di tengah, Anda memerlukan dua pesan yang berukuran lebih besar: satu di kiri atas dan satu di pojok kanan bawah. Dalam tugas ini, Anda akan menghapus TextView yang ada, dan menambahkan dua TextViews baru, serta mempelajari cara memosisikannya di dalam ConstraintLayout.
+**Menghapus TextView saat ini**
+1. Di Layout Editor, klik untuk memilih **TextView** di bagian tengah tata letak.
+ ![delete](https://user-images.githubusercontent.com/89612818/136324488-49cb90ce-fd8d-447c-9535-8b07db6b83c0.png)
+3. Tekan tombol **Delete**. Android Studio akan menghapus **TextView**, dan sekarang aplikasi Anda hanya menampilkan **ConstraintLayout** di **Layout Editor** dan **Component Tree**.
+
+**Menambahkan TextView**
+Pada langkah ini, Anda akan menambahkan **TextView** di kiri atas aplikasi untuk menampung ucapan selamat ulang tahun.
+![Screenshot (169)](https://user-images.githubusercontent.com/89612818/136324662-a44a2bb7-874b-4f93-8e0c-e971fe5e76a7.png)
+
+**Palette** di kiri atas **Layout Editor** berisi daftar berbagai jenis **Views**, yang disusun berdasarkan kategori, yang dapat Anda tambahkan ke aplikasi
+1. Cari **TextView**. Kode ini muncul dalam kategori **Common** dan kategori **Text**.
+![palette](https://user-images.githubusercontent.com/89612818/136325477-09bc2046-70d4-41cc-b08d-7ec1cc4541b4.png)
+
+2. Tarik **TextView** dari **Palette** ke kiri atas permukaan desain di **Layout Editor** dan letakkan. Posisinya tidak harus sama persis, cukup letakkan di dekat sudut kiri atas.
+![tariktextview](https://user-images.githubusercontent.com/89612818/136325730-df36954a-65f5-419e-acb9-91eb31e8ab33.png)
+
+3. Perhatikan bahwa ada TextView yang ditambahkan, dan perhatikan tanda seru berwarna merah di Component Tree.
+4. Arahkan kursor ke tanda seru, dan Anda akan melihat pesan yang berisi peringatan bahwa tampilan tidak dibatasi dan akan melompat ke posisi yang berbeda saat aplikasi dijalankan. Anda akan memperbaikinya di langkah berikutnya.
+
+**Memosisikan TextView**
+Untuk kartu ulang tahun, **TextView** harus berada di dekat sudut kiri atas dengan ruang di sekitarnya. Untuk memperbaiki peringatan, Anda perlu menambahkan beberapa batasan ke **TextView** sehingga aplikasi akan tahu cara memosisikannya. Batasan terdiri dari arah dan batas agar **View** dapat berada di dalam tata letak.
+
+Batasan yang Anda tambahkan ke atas dan kiri akan memiliki margin. Margin menentukan seberapa jauh jarak **View** dari tepi penampungnya.
+![hbd](https://user-images.githubusercontent.com/89612818/136326002-11a3cd47-51d8-4d1b-a8dd-af73ea324fb8.png)
+
+1. Di Attributes di sebelah kanan, cari Constraint Widget di bagian Layout. Gambar persegi yang muncul mewakili tampilan Anda.
+![layout](https://user-images.githubusercontent.com/89612818/136326215-f0058be5-9482-4ef9-9dba-2ac5677be529.png)
+2. Klik tanda + di bagian atas kotak. Ini untuk batasan antara bagian atas tampilan teks dan tepi atas tata letak batasan.
+3. Kolom berisi angka akan muncul untuk menyetel margin atas. Margin adalah jarak dari TextView ke tepi penampung, yaitu ConstraintLayout. Angka yang muncul akan berbeda mengikuti posisi Anda meletakkan TextView. Saat Anda menyetel margin atas, Android Studio secara otomatis juga menambahkan batasan dari bagian atas tampilan teks ke bagian atas ConstrainLayout.
+![layout](https://user-images.githubusercontent.com/89612818/136326215-f0058be5-9482-4ef9-9dba-2ac5677be529.png)
+4. Ubah margin atas menjadi 16.
+5. Lakukan hal yang sama untuk margin kiri.
+6. Atur text untuk mengucapkan selamat ulang tahun kepada teman, misalnya **"Happy Brithday, Alam!"** lalu tekan tombol Enter
+![declared](https://user-images.githubusercontent.com/89612818/136326697-f1a739e5-e71c-48b9-b793-2a15f6e0aa22.png)
+7. Perhatikan bahwa tampilan Design akan diperbarui untuk memperlihatkan tampilan terkini aplikasi Anda. 
+![hbd](https://user-images.githubusercontent.com/89612818/136326002-11a3cd47-51d8-4d1b-a8dd-af73ea324fb8.png)
+
+**Menambahkan dan memosisikan TextView lain**
+Kartu ulang tahun Anda memerlukan baris teks kedua di dekat pojok kanan bawah, yang akan Anda tambahkan di langkah ini menggunakan cara yang sama seperti di tugas sebelumnya. Menurut Anda bagaimana margin TextView ini?
+
+1. Tarik TextView baru dari Palette dan letakkan di dekat bagian kanan bawah tampilan aplikasi di Layout Editor.
+![image](https://user-images.githubusercontent.com/89612818/136327588-2a3fc7c1-1825-4f51-82e5-743d3987d037.png)
+2. Tetapkan margin kanan ke 16.
+3. Tetapkan margin bawah ke 16. 
+![layout1](https://user-images.githubusercontent.com/89612818/136327446-c6ffce5f-bf37-49b4-a5ee-fcedbc0a5a1a.png)
+4. Di **Attributes**, tetapkan atribut text untuk menandatangani kartu, misalnya "**FROM Dzuhri**".
+5. Jalankan aplikasi dan Anda akan melihat ucapan selamat ulang tahun di kiri atas dan tanda tangan di kanan bawah.
+![output hbdalamfrom](https://user-images.githubusercontent.com/89612818/136327018-27cefc28-b8ed-4fc1-93d4-fafe8d4f1b99.png)
